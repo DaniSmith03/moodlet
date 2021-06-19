@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box
+  
+  }
+
+  body  {
+    background-image: url(Serenity.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:center center; 
+  }
+  
+  html {
+
+    font-family: fantasy;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    /* background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%); */
+    margin: 0 0 2rem 0;
+    font-size: 3rem;
+    color: black;
+  }
+  
+  h2 {
+    text-align: left;
+    padding: 1.5rem 2.5rem;
+    /* background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%); */
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+    color: black;
+  }
+
+  div {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    /* background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%); */
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    color: black;
+  }
