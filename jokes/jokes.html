@@ -7,14 +7,50 @@
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
-  
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="/Users/dani/DigitalCrafts/APIProject/Front-End-Project/jokes/jokes.css">
 </head>
 
 <body>
-    <div id="joke"></div>
-    <button id="getJoke">Get A Joke</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Affirmations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fun</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/Users/dani/DigitalCrafts/APIProject/Front-End-Project/jokes/jokes.html">Jokes</a>
+             
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section>
+      <h1 class="title">Random Dad Jokes Generator</h1>
+      <div class="container">
+        <div class="joke" id="joke">
+          <p></p>
+        </div>
+        <button id="getJoke">Get a Dad Joke</button>
+      </div>
+    </section>
   <script src="jokes/jokes.js"></script>
 </body>
 </html>
