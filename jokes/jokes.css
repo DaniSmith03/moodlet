@@ -9,8 +9,8 @@
   /* } */
   body {
     background-color: rgb(236, 236, 236);
-    color: black;
-  }
+    /* color: black;
+  } */
   section {
     min-height: 75vh;
     width: 100%;
@@ -37,6 +37,7 @@
     flex-direction: column;
   }
   .container p {
+    color: black;
     font-size: 2rem;
     font-weight: 300;
     line-height: 3rem;
