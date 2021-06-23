@@ -1,10 +1,10 @@
-/* * {
+* {
     box-sizing: border-box
   
-  } */
+  }
 
   body  {
-    background-image: url(Serenity.jpg);
+    background-image: url(images/Serenity.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position:center center; 
