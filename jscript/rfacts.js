@@ -1,23 +1,18 @@
+let messageDiv = document.getElementById('fact');
+let rfact = () => {
+  fetch("https://uselessfacts.jsph.pl/random.json?language=en")
 
-
-
-
-      fetch("https://uselessfacts.jsph.pl/random.json?language=en")
     .then((response) => {
-      if (response.ok) {
+      
         return response.json();
-      } else {
-        console.log("NETWORK RESPONSE ERROR");
-      }
+      
     })
     .then(data => {
-      console.log(data);
-      displayFact(data)
+      
+      const foundFact = data;
+    console.log(foundFact)
+    messageDiv.textContent = foundFact.text
     })
-    // .catch((error) => console.error("FETCH ERROR:", error));
+  }
 
-console.log(response)
-
-
-
-//test comment
+  rfact()
