@@ -34,23 +34,3 @@ fetchPromise.then(getObj).then((data) => {
   theJoke.textContent = getJoke.setup + " - " + getJoke.punchline
 
 });
-
-
-
-
-// fetch("https://dad-jokes.p.rapidapi.com/random/joke", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-key": "eaa1f5f321msh29e8e62924108b7p133debjsnc1439027078c",
-// 		"x-rapidapi-host": "dad-jokes.p.rapidapi.com"
-// 	}
-// })
-// .then(response => response.json()
-// ).then(response =>{console.log(response.body)})
-
-
-
-
-// .catch(err => {
-// 	console.error(err);
-// });

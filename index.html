@@ -36,6 +36,33 @@
 
       <div class="container-xl bg-light">
 
+
+        <!-- Test Code For User Input  -->
+        <script language="JavaScript">
+          function showInput() {
+              document.getElementById('display').innerHTML = 
+                          document.getElementById("user_input").value;
+          }
+        </script>
+      
+        </head>
+      <body>
+      
+        <form>
+          <label><b>Enter a Message</b></label>
+          <input type="text" name="message" id="user_input">
+        </form>
+      
+        <input type="submit" onclick="showInput();"><br/>
+        <label>Your input: </label>
+        <p><span id='display'></span></p>
+
+        <!-- Test Code for user input  -->
+
+
+
+
+
       <div id="content">
           <h1>Welcome to our page!</h1>
           <p class="words">The purpose of our project is to bring a bit of sunshine and fun to your lives. 
