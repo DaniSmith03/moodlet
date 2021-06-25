@@ -1,4 +1,3 @@
-
 let messageDiv = document.getElementById('today');
 
 let affirmation = () => {
