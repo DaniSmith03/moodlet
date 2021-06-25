@@ -1,26 +1,56 @@
 // let button= document.getElementById("getJoke");
-// let theJoke=document.getElementById("joke");
+let theJoke=document.getElementById("joke");
 
 // button.addEventListener("click", printJoke)
 
-let tellJoke=()=> {
-    const jokeData = fetch("https://icanhazdadjoke.com/", {
-      headers: {
-        Accept: "application/json"
-      }
-    });
-    const jokeObj = jokeData.json();
-    jokeDiv.innerHTML = jokeObj.joke;
-    console.log(jokeData);
-  }
-  
+// fetch("https://dad-jokes.p.rapidapi.com/random/joke")
+// .then(response => {
+// 	console.log(response);
+// })
+// .catch(err => {
+// 	console.error(err);
 
 
-const button = document.getElementById("getJoke");
-const jokeDiv = document.getElementById("joke");
+const fetchPromise = fetch("https://dad-jokes.p.rapidapi.com/random/joke", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "eaa1f5f321msh29e8e62924108b7p133debjsnc1439027078c",
+		"x-rapidapi-host": "dad-jokes.p.rapidapi.com"
+	}
+});
 
-document.addEventListener("DOMContentLoaded", tellJoke);
+const getObj= (response => {
+  return response.json()});
 
-button.addEventListener("click", tellJoke);
+const logObj=(response => { console.log(response)})
+
+const keyObj=(response=>{console.log(response.body)})
 
 
+fetchPromise.then(getObj).then((data) => {
+    
+  const getJoke = data.body[0];
+  console.log(getJoke)
+  theJoke.textContent = getJoke.setup + " - " + getJoke.punchline
+
+});
+
+
+
+
+// fetch("https://dad-jokes.p.rapidapi.com/random/joke", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-key": "eaa1f5f321msh29e8e62924108b7p133debjsnc1439027078c",
+// 		"x-rapidapi-host": "dad-jokes.p.rapidapi.com"
+// 	}
+// })
+// .then(response => response.json()
+// ).then(response =>{console.log(response.body)})
+
+
+
+
+// .catch(err => {
+// 	console.error(err);
+// });

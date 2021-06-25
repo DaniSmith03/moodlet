@@ -9,7 +9,7 @@ html {
 }
 body {
   background-color: rgb(236, 236, 236);
-   color: black;
+   /* color: black; */
 } 
 section {
   min-height: 75vh;
@@ -26,7 +26,7 @@ section {
   font-weight: 700;
   text-align: center;
 }
-.container {
+.container_c {
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
@@ -36,8 +36,8 @@ section {
   display: flex;
   flex-direction: column;
 }
-.container p {
-  color: black;
+.container_c p {
+  /* color: black; */
   font-size: 2rem;
   font-weight: 300;
   line-height: 3rem;
