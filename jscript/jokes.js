@@ -1,3 +1,6 @@
+$("#div1").load("/index.html")
+
+
 // let button= document.getElementById("getJoke");
 let theJoke=document.getElementById("joke");
 
@@ -34,3 +37,5 @@ fetchPromise.then(getObj).then((data) => {
   theJoke.textContent = getJoke.setup + " - " + getJoke.punchline
 
 });
+
+
