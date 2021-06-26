@@ -55,3 +55,27 @@ button {
   cursor: pointer;
   align-self: flex-end;
 }
+
+#img{
+  float:left;
+   width: 150px ;
+   height:175px;
+   border-radius: 50%;
+   margin:30px;
+      
+  
+}
+#img2{
+  float: right;
+  width: 150px ;
+  height:175px;
+  border-radius: 50%;
+  margin:30px;
+}
+
+
+#title2{
+  text-align: center;
+  text-decoration: underline;
+
+}
