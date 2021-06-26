@@ -19,7 +19,7 @@ h1 {
 
 h2 {
   font-family: cursive;
-  text-align: left;
+  text-align: center;
   padding: 1.5rem 2.5rem;
   margin: 0 0 2rem 0;
   font-size: 2.3rem;
@@ -39,4 +39,28 @@ h2 {
   margin: 0 0 2rem 0;
   font-size: 2.5rem;
   color: black;
+}
+
+#img{
+  float:left;
+   width: 150px ;
+   height:175px;
+   border-radius: 50%;
+   margin:30px;
+      
+  
+}
+#img2{
+  float: right;
+  width: 150px ;
+  height:175px;
+  border-radius: 50%;
+  margin:30px;
+}
+
+
+#title2{
+  text-align: center;
+  text-decoration: underline;
+
 }
