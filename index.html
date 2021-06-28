@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Tell Me Something</title>
+  <title>Moodlet</title>
   <meta name="description" content="Tell Me Something">
   <link href="css/index.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -12,9 +12,12 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-info">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <!-- -----------------------------Navbar-------------------------------- -->
+  <nav class="navbar navbar-expand navbar-light bg-info">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -30,25 +33,163 @@
           </li>
         </ul>
       </div>
-    </div>
+   
   </nav>
+  <!-- -----------------------------Navbar-------------------------------- -->
   
 
       <div class="container-xl">
 
       <div id="content">
-        <h1>Hi <span id="demo"></span>! Welcome to our page! </h1>
-          <p class="words">
-            The purpose of this page is to exercise our knowledge and mastery of some learned programming 
-            concepts.</p> <ul><li>This page displays The use of HTML elements to set page framework.</li></ul>
-            <ul><li>The use of CSS/Bootstrap to create an aesthetically pleasing and layout using css flex-box.</ul> 
-            <ul><li>As well as Javascript for interactive functionality which is displayed though the programming 
+        <h1>Hi <span id="yourName"></span>! Welcome to our page! </h1>
+  <!-- -------------Begin CSS GRID---------------------------- -->
+        <div class="container bg-light">
+        <div class="row align-items-center">
+          <p class="words" id="header">
+            The purpose of this page is to exercise our knowledge and attempt at mastery of the following learned programming concepts!</p>
+
+            <div class="col">
+              <h5>HTML</h5>
+               <ul><li>This page displays The use of HTML elements to set page framework.</li></ul>
+            </div>
+
+
+            <div class="col">
+              <h5>CSS</h5>
+              <ul><li>The use of CSS/Bootstrap to create an aesthetically pleasing and layout using css flex-box.</ul> 
+            </div>
+
+          
+            <div class="col">
+              <h5>Javascript</h5>
+              <ul><li>As well as Javascript for interactive functionality which is displayed though the programming 
             of Application Programming Interface.</li></ul>
-            <p class="words">By selecting a topic from one of the Nav bar options, you will be directed to a random fact, 
-            joke, or affirmation to get your day started. The choice is yours ! Enjoy!  </p>
+            </div>
+            </div>
+            
+        </div>
+        <!-- -------------End CSS GRID---------------------------- -->
+        <br>
+            <h4>How This Works: </h4>
+            <p id="header">Select a topic topic from the navbar to find an Affirmation, Random Fact, or Joke. Feeling indecisive? Take the quiz below to get a suggestion on what you need in your life today. Your Results will display to the right of the quiz. We hope this brightened your day! Thanks for stopping by!</p>
+            </div>
 
-            <a href="#top">Bak to Top</a>
+<!-- ------------------------------Mood Form------------------------ -->
+<h4 id="header">Moodlet Quiz!</h4>
+<div class= "form-Container">
+ 
+    <div class="form">
+     
+              <form id="moodForm"></form>
+              <!-- ------------Q1------------ -->
+              <h6 class="question">1. Which word best describes you right now ?</h6>
+              <label class="answers">
+                <input type="radio" name="q1" value="a2">
+                Bored
+              </label>
+              <br>
+              <label class="answers">
+                <input type="radio" name="q1" value="a1">
+                Motivated
+              </label>
+              <br>
+              <label class="answers">
+                <input type="radio" name="q1" value="a3">
+               Silly
+              </label>
+              
+              <br>
 
+              <!-- ------------Q2------------ -->
+              <h6 class="question">2. Which activity sounds the most appealing right now?</h6>
+              <label class="answers">
+                <input type="radio" name="q2" value="a1">
+                Getting something productive done!
+              <br>
+              <label class="answers">
+                <input type="radio" name="q2" value="a3">
+               Scrolling socia media...
+              </label>
+              <br>
+              <label class="answers">
+                <input type="radio" name="q2" value="a2">
+               Learning something new?
+              </label>
+
+              <br>
+
+               <!-- ------------Q3------------ -->
+               <h6 class="question">3. What would be your drink of choice right now?</h6>
+               <label class="answers">
+                 <input type="radio" name="q3" value="a3">
+                 Soda/Juice
+               </label>
+               <br>
+               <label class="answers">
+                 <input type="radio" name="q3" value="a2">
+                Coffee/Energy Drink
+               </label>
+               <br>
+               <label class="answers">
+                 <input type="radio" name="q3" value="a1">
+                Hot tea/Water
+               </label>
+               <br>
+
+
+               <!-- ------------Q4------------ -->
+               <h6 class="question">4. What would you say is the meaning of life?</h6>
+               <label class="answers">
+                 <input type="radio" name="q4" value="a1">
+                 "Good deads for all"
+               </label>
+               <br>
+               <label class="answers">
+                 <input type="radio" name="q4" value="a2">
+                "To learn and explore"
+               </label>
+               <br>
+               <label class="answers">
+                 <input type="radio" name="q4" value="a3">
+                "42"
+               </label>
+               <br>
+
+                <!-- ------------Q5------------ -->
+                <h6 class="question">5. Which clothing article fits your style today?</h6>
+                <label class="answers">
+                  <input type="radio" name="q5" value="a3">
+                  Hoodies and T's
+                </label>
+                <br>
+                <label class="answers">
+                  <input type="radio" name="q5" value="a1">
+                Workout Clothes
+                </label>
+                <br>
+                <label class="answers">
+                  <input type="radio" name="q5" value="a2">
+                 Buisiness Casual
+                </label>
+                <br>
+                <button type="submit" class="btn btn-secondary btn-sm" id="submit" onclick="addAnswers()">Submit Your Answers</button>
+                
+                <button type="reset" class="btn btn-secondary btn-sm" id="reset" onclick="resetAnswer()">Reset</button>
+
+            </form>
+      </div>
+      <div class="form-Result" id="form-Result">
+        <h5>Your Results Here</h5>
+        
+      </div>
+</div>
+
+<!-- ------------------------------MoodForm------------------------ -->
+
+            <button type="button" class="btn btn-outline-info" id="toTop">Back To Top</button>
+
+
+<!-- ------------------Footer----------------------- -->
               <footer class="bg-light text-center text-lg-start">
                   <!-- Grid container -->
                   <div class="container p-4">
@@ -98,6 +239,8 @@
         
       </div>
     </div>
+
+    
 
    
   <script src="jscript/index.js"></script>
