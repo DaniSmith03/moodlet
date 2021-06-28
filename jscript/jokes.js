@@ -1,17 +1,7 @@
-$("#div1").load("/index.html")
 
-
-// let button= document.getElementById("getJoke");
+let button= document.getElementById("getJoke");
 let theJoke=document.getElementById("joke");
-
-// button.addEventListener("click", printJoke)
-
-// fetch("https://dad-jokes.p.rapidapi.com/random/joke")
-// .then(response => {
-// 	console.log(response);
-// })
-// .catch(err => {
-// 	console.error(err);
+let punchline=document.getElementById("jokePunch")
 
 
 const fetchPromise = fetch("https://dad-jokes.p.rapidapi.com/random/joke", {
@@ -22,20 +12,29 @@ const fetchPromise = fetch("https://dad-jokes.p.rapidapi.com/random/joke", {
 	}
 });
 
-const getObj= (response => {
-  return response.json()});
+// const getObj= (response => {
+//   return response.json()});
 
-const logObj=(response => { console.log(response)})
+// const logObj=(response => { console.log(response)})
 
-const keyObj=(response=>{console.log(response.body)})
+// const keyObj=(response=>{console.log(response.body)})
 
 
-fetchPromise.then(getObj).then((data) => {
+fetchPromise.then(response =>
+	 response.json()).then((data) => {
     
   const getJoke = data.body[0];
   console.log(getJoke)
-  theJoke.textContent = getJoke.setup + " - " + getJoke.punchline
+  theJoke.textContent = getJoke.setup
+  button.onclick=function(){jokePunch.textContent=getJoke.punchline}
+  
 
 });
+
+
+
+
+
+
 
 
