@@ -36,7 +36,7 @@ section {
 .container_c {
   width: 90%;
   max-width: 800px;
-  margin: 0 auto;
+  margin:  auto;
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
   padding: 2rem;
