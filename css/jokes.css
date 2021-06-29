@@ -30,26 +30,31 @@ section {
   color:white;
   top: 100px;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 .container_c {
   width: 90%;
   max-width: 800px;
-  margin: 0 auto;
+  margin:  auto;
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
-}
-.container_c  {
-  /* color: black; */
+
   font-size: 2rem;
   font-weight: 300;
   line-height: 3rem;
   text-align: center;
 }
+/* .container_c  {
+  color: black;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  text-align: center;
+} */
 
 
 #img{
