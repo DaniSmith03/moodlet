@@ -32,10 +32,14 @@ nav{
 
 }
 
-h1{
+.title{
     font-family: cursive;
+    font-weight: 700;
     text-align: center;
+    font-size: 3rem;
     padding-top: 5rem;
+
+
 }
 
 #header{
@@ -81,3 +85,7 @@ font-size: 1.5rem;}
     margin: 10px;
 }
 
+.col h5{
+    text-decoration: underline;
+    color: #0dcaf0;
+}
